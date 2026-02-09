@@ -40,7 +40,7 @@ Output is saved to `output/` (latest) and `history/` (versioned).
 |--------|------|-------------|
 | `detect_api_taggable.py` | **PRIMARY** | Authoritative resource-level detection |
 | `detect_service_level.py` | SECONDARY | Quick service-level validation |
-| `detect_resource_level.py` | SUPPLEMENTARY | CloudFormation resource mapping |
+| `cfn_to_iam_mapper.py` | SUPPLEMENTARY | CloudFormation resource mapping |
 
 ## Output Files
 

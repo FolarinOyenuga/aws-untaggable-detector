@@ -15,7 +15,7 @@ For each service with tagging support, extracts:
 
 Related scripts:
 - detect_service_level.py [SECONDARY] - Quick service-level check
-- detect_resource_level.py [SUPPLEMENTARY] - CloudFormation resource mapping
+- cfn_to_iam_mapper.py [SUPPLEMENTARY] - CloudFormation resource mapping
 """
 
 import json

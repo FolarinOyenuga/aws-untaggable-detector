@@ -9,7 +9,7 @@ Source: IAM Service Authorization Reference
 
 Related scripts:
 - detect_api_taggable.py [PRIMARY] - Authoritative resource-level detection
-- detect_resource_level.py [SUPPLEMENTARY] - CloudFormation resource mapping
+- cfn_to_iam_mapper.py [SUPPLEMENTARY] - CloudFormation resource mapping
 """
 
 import json
