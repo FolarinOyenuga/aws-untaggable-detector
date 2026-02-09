@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """
-Detect which AWS resources support tagging at the API level.
+[PRIMARY/AUTHORITATIVE] Detect which AWS resources support tagging at the API level.
+
+This is the authoritative source for untaggable resource detection.
+Use this script for comprehensive analysis.
 
 Source of Truth: IAM Service Authorization Reference
 - Parses which resources the TagResource/CreateTags actions apply to
@@ -9,6 +12,10 @@ Source of Truth: IAM Service Authorization Reference
 For each service with tagging support, extracts:
 - Which specific resource types can be tagged
 - Which resource types CANNOT be tagged (exist in service but not in TagResource scope)
+
+Related scripts:
+- detect_service_level.py [SECONDARY] - Quick service-level check
+- detect_resource_level.py [SUPPLEMENTARY] - CloudFormation resource mapping
 """
 
 import json

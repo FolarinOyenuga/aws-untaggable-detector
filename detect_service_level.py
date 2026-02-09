@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
 """
-Identify AWS services that DO NOT support tagging at the API level.
+[SECONDARY] Quick check for services without tagging API.
 
-This is the source of truth - if a service has no tagging API actions,
-it cannot be tagged regardless of how resources are created (CFN, Terraform, ClickOps).
+Use this for fast validation of service-level tagging support.
+For authoritative resource-level detection, use detect_api_taggable.py instead.
 
 Source: IAM Service Authorization Reference
+
+Related scripts:
+- detect_api_taggable.py [PRIMARY] - Authoritative resource-level detection
+- detect_resource_level.py [SUPPLEMENTARY] - CloudFormation resource mapping
 """
 
 import json
