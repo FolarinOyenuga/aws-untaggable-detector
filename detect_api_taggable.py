@@ -19,9 +19,12 @@ from rich.console import Console
 from rich.table import Table
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from cache_config import get_cached_session
+from exceptions import AWSDocStructureError
 
 console = Console()
 session = get_cached_session()
+
+MIN_EXPECTED_SERVICES = 400
 
 SERVICE_AUTH_REF_BASE = "https://docs.aws.amazon.com/service-authorization/latest/reference"
 SERVICE_AUTH_REF_TOC = f"{SERVICE_AUTH_REF_BASE}/reference_policies_actions-resources-contextkeys.html"
@@ -32,6 +35,7 @@ def get_all_services() -> list[dict]:
     console.print("[blue]Fetching AWS services from IAM Authorization Reference...[/blue]")
     
     response = session.get(SERVICE_AUTH_REF_TOC, timeout=30)
+    response.raise_for_status()
     soup = BeautifulSoup(response.text, "lxml")
     
     services = []
@@ -44,6 +48,12 @@ def get_all_services() -> list[dict]:
                 "name": service_name,
                 "url": f"{SERVICE_AUTH_REF_BASE}/{clean_href}",
             })
+    
+    if len(services) < MIN_EXPECTED_SERVICES:
+        raise AWSDocStructureError(
+            f"Expected at least {MIN_EXPECTED_SERVICES} services, found {len(services)}. "
+            "AWS documentation structure may have changed."
+        )
     
     return services
 
@@ -213,7 +223,13 @@ def main():
             if r.get("untaggable_resources"):
                 mixed_services.append(r)
     
-    # Display results
+    if errors:
+        console.print(f"\n[bold red]WARNING: {len(errors)} services failed to parse[/bold red]")
+        for err in errors[:5]:
+            console.print(f"  - {err['name']}: {err.get('error', 'Unknown error')}")
+        if len(errors) > 5:
+            console.print(f"  ... and {len(errors) - 5} more")
+    
     console.print("\n[bold cyan]═══ RESULTS ═══[/bold cyan]\n")
     
     table = Table(title="API-Level Tagging Analysis")
