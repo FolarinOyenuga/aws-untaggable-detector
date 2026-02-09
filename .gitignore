@@ -28,8 +28,9 @@ output/*.csv
 # Jupyter
 .ipynb_checkpoints/
 
-# Cache
+# Cache and history
 .cache/
+history/
 
 # pytest
 .pytest_cache/
