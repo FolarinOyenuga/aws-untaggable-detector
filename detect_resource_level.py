@@ -18,6 +18,7 @@ from pathlib import Path
 from rich.console import Console
 from rich.table import Table
 from cache_config import get_cached_session
+from service_mapping import CFN_TO_IAM_SERVICE, normalize_for_fuzzy_match
 
 console = Console()
 session = get_cached_session()
@@ -53,23 +54,29 @@ def get_cfn_resources() -> dict:
     return by_service
 
 
-def normalize_service_name(name: str) -> str:
-    """Normalize service name for matching."""
-    return name.lower().replace(" ", "").replace("-", "").replace("_", "").replace("amazon", "").replace("aws", "")
+def match_service(cfn_prefix: str, service_list: list[str]) -> str | None:
+    """Match a CFN prefix to an IAM service name using verified mapping first, then exact fuzzy fallback."""
+    cfn_lower = cfn_prefix.lower()
+    
+    iam_name = CFN_TO_IAM_SERVICE.get(cfn_lower)
+    if iam_name and iam_name in service_list:
+        return iam_name
+    
+    cfn_norm = normalize_for_fuzzy_match(cfn_lower)
+    for svc in service_list:
+        if normalize_for_fuzzy_match(svc) == cfn_norm:
+            return svc
+    
+    return None
 
 
 def identify_resource_level_untaggables(
     cfn_resources: dict,
     service_data: dict,
 ) -> dict:
-    """Identify resources in untaggable vs taggable services."""
-    taggable_normalized = {}
-    for svc in service_data.get("taggable_services", []):
-        taggable_normalized[normalize_service_name(svc)] = svc
-    
-    untaggable_normalized = {}
-    for svc in service_data.get("untaggable_services", []):
-        untaggable_normalized[normalize_service_name(svc)] = svc
+    """Identify resources in untaggable vs taggable services using verified mapping."""
+    taggable_services = service_data.get("taggable_services", [])
+    untaggable_services = service_data.get("untaggable_services", [])
     
     results = {
         "in_taggable_services": {},
@@ -78,19 +85,8 @@ def identify_resource_level_untaggables(
     }
     
     for service, resources in cfn_resources.items():
-        service_norm = normalize_service_name(service)
-        matched_taggable = None
-        matched_untaggable = None
-        
-        for tn, orig in taggable_normalized.items():
-            if service_norm in tn or tn in service_norm:
-                matched_taggable = orig
-                break
-        
-        for un, orig in untaggable_normalized.items():
-            if service_norm in un or un in service_norm:
-                matched_untaggable = orig
-                break
+        matched_taggable = match_service(service, taggable_services)
+        matched_untaggable = match_service(service, untaggable_services)
         
         if matched_taggable and not matched_untaggable:
             results["in_taggable_services"][service] = {
