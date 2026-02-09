@@ -13,6 +13,7 @@ For each service with tagging support, extracts:
 
 import json
 import re
+from datetime import datetime
 from bs4 import BeautifulSoup
 from pathlib import Path
 from rich.console import Console
@@ -292,8 +293,18 @@ def main():
     with open(output_file, "w") as f:
         json.dump(report, f, indent=2)
     
+    history_dir = Path(__file__).parent / "history"
+    history_dir.mkdir(parents=True, exist_ok=True)
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    history_file = history_dir / f"api_taggable_resources_{timestamp}.json"
+    report["run_timestamp"] = timestamp
+    with open(history_file, "w") as f:
+        json.dump(report, f, indent=2)
+    
     console.print(f"\n[green]Report saved to {output_file}[/green]")
+    console.print(f"[green]History saved to {history_file}[/green]")
     console.print(f"\n[bold]Total untaggable resources identified: {len(all_untaggable)}[/bold]")
+    console.print("[dim]Run 'python diff_runs.py' to compare with previous runs[/dim]")
 
 
 if __name__ == "__main__":
