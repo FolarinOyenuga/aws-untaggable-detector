@@ -13,14 +13,15 @@ For each service with tagging support, extracts:
 
 import json
 import re
-import requests
 from bs4 import BeautifulSoup
 from pathlib import Path
 from rich.console import Console
 from rich.table import Table
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from cache_config import get_cached_session
 
 console = Console()
+session = get_cached_session()
 
 SERVICE_AUTH_REF_BASE = "https://docs.aws.amazon.com/service-authorization/latest/reference"
 SERVICE_AUTH_REF_TOC = f"{SERVICE_AUTH_REF_BASE}/reference_policies_actions-resources-contextkeys.html"
@@ -30,7 +31,7 @@ def get_all_services() -> list[dict]:
     """Fetch all AWS services from IAM Authorization Reference."""
     console.print("[blue]Fetching AWS services from IAM Authorization Reference...[/blue]")
     
-    response = requests.get(SERVICE_AUTH_REF_TOC, timeout=30)
+    response = session.get(SERVICE_AUTH_REF_TOC, timeout=30)
     soup = BeautifulSoup(response.text, "lxml")
     
     services = []
@@ -146,7 +147,7 @@ def extract_tagging_actions_and_resources(soup: BeautifulSoup) -> dict:
 def analyze_service(service: dict) -> dict:
     """Analyze a single service for resource-level tagging support."""
     try:
-        response = requests.get(service["url"], timeout=15)
+        response = session.get(service["url"], timeout=15)
         soup = BeautifulSoup(response.text, "lxml")
         
         all_resources = extract_resource_types(soup)
