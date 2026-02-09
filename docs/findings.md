@@ -35,4 +35,4 @@ To automate reviews:
 ## References
 
 - [IAM Service Authorization Reference](https://docs.aws.amazon.com/service-authorization/latest/reference/reference.html)
-- Related tickets: #560, #564
+- Related: [ministryofjustice/cloud-optimisation-and-accountability#595](https://github.com/ministryofjustice/cloud-optimisation-and-accountability/issues/595)

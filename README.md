@@ -1,6 +1,8 @@
 # AWS Untaggable Resources Detector
 
-Automated detection of untaggable AWS resources for SCP policy management (#564)
+Automated detection of untaggable AWS resources for SCP policy management.
+
+Related: [ministryofjustice/cloud-optimisation-and-accountability#595](https://github.com/ministryofjustice/cloud-optimisation-and-accountability/issues/595)
 
 ## Overview
 
@@ -48,6 +50,5 @@ python detect_resource_level.py
 
 ## Related
 
-- Spike ticket: #564
-- Related to: #560 (Confirm which AWS Resources can't be tagged)
+- [Spike ticket #595](https://github.com/ministryofjustice/cloud-optimisation-and-accountability/issues/595)
 - Source: [IAM Service Authorization Reference](https://docs.aws.amazon.com/service-authorization/latest/reference/reference.html)
