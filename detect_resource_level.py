@@ -14,12 +14,13 @@ For SCP policies, you need BOTH:
 """
 
 import json
-import requests
 from pathlib import Path
 from rich.console import Console
 from rich.table import Table
+from cache_config import get_cached_session
 
 console = Console()
+session = get_cached_session()
 
 CFN_SPEC_URL = "https://d1uauaxba7bl26.cloudfront.net/latest/gzip/CloudFormationResourceSpecification.json"
 
@@ -37,7 +38,7 @@ def get_cfn_resources() -> dict:
     """Get all CFN resource types grouped by service."""
     console.print("[blue]Fetching CloudFormation resource types...[/blue]")
     
-    spec = requests.get(CFN_SPEC_URL, timeout=30).json()
+    spec = session.get(CFN_SPEC_URL, timeout=30).json()
     resource_types = spec.get("ResourceTypes", {})
     
     by_service = {}
