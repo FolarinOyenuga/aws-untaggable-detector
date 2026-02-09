@@ -1,16 +1,15 @@
 #!/usr/bin/env python3
 """
-Detect resource-level untaggable AWS resources.
+[SUPPLEMENTARY] Map CloudFormation resource types to tagging status.
 
-These are specific resources that cannot be tagged even though their
-parent service HAS tagging API support.
+This script maps CFN resource types to their tagging support status by
+cross-referencing with IAM service data. Useful for IaC teams.
 
-This complements detect_service_level.py which identifies services
-with NO tagging support at all.
+For authoritative resource-level detection, use detect_api_taggable.py instead.
 
-For SCP policies, you need BOTH:
-- Service-level exclusions (entire services)
-- Resource-level exclusions (specific resources in taggable services)
+Related scripts:
+- detect_api_taggable.py [PRIMARY] - Authoritative resource-level detection
+- detect_service_level.py [SECONDARY] - Quick service-level check
 """
 
 import json
