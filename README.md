@@ -12,9 +12,10 @@ Detects AWS resources that cannot be tagged at two levels:
 
 ## Why Two Levels?
 
-For SCP policies, you need both:
-1. **Service-level exclusions** - Entire services that don't support tagging
-2. **Resource-level exclusions** - Specific resources in services that DO support tagging
+For SCP tagging policies, you need to **exclude untaggable resources** from tag enforcement:
+
+1. **Service-level exclusions** - Services with NO tagging API (all resources untaggable). Simpler to exclude entire service than list every resource.
+2. **Resource-level exclusions** - Specific untaggable resources within services that DO have tagging support for other resources (mixed services like Cognito, CodeDeploy).
 
 ## Project Structure
 
