@@ -21,7 +21,6 @@ from rich.table import Table
 
 console = Console()
 
-# CloudFormation spec URL - used to get resource types, NOT for tagging info
 CFN_SPEC_URL = "https://d1uauaxba7bl26.cloudfront.net/latest/gzip/CloudFormationResourceSpecification.json"
 
 
@@ -35,10 +34,7 @@ def load_service_level_data(output_dir: Path) -> dict:
 
 
 def get_cfn_resources() -> dict:
-    """
-    Get all CFN resource types grouped by service.
-    We use CFN spec ONLY to enumerate resources, not to determine taggability.
-    """
+    """Get all CFN resource types grouped by service."""
     console.print("[blue]Fetching CloudFormation resource types...[/blue]")
     
     spec = requests.get(CFN_SPEC_URL, timeout=30).json()
@@ -46,7 +42,6 @@ def get_cfn_resources() -> dict:
     
     by_service = {}
     for resource_type in resource_types.keys():
-        # Parse AWS::Service::Resource format
         parts = resource_type.split("::")
         if len(parts) >= 3:
             service = parts[1].lower()
@@ -66,18 +61,7 @@ def identify_resource_level_untaggables(
     cfn_resources: dict,
     service_data: dict,
 ) -> dict:
-    """
-    Identify resources that are untaggable at the resource level.
-    
-    These are resources in services that HAVE tagging APIs but where
-    the specific resource doesn't support tagging.
-    
-    Note: This requires manual verification or additional data sources
-    since we can't automatically determine resource-level tagging from
-    the IAM Authorization Reference alone.
-    """
-    
-    # Normalize taggable service names for matching
+    """Identify resources in untaggable vs taggable services."""
     taggable_normalized = {}
     for svc in service_data.get("taggable_services", []):
         taggable_normalized[normalize_service_name(svc)] = svc
@@ -87,15 +71,13 @@ def identify_resource_level_untaggables(
         untaggable_normalized[normalize_service_name(svc)] = svc
     
     results = {
-        "in_taggable_services": {},  # Resources in services with tagging API
-        "in_untaggable_services": {},  # Resources in services without tagging API
-        "unknown_services": {},  # Resources in services not found
+        "in_taggable_services": {},
+        "in_untaggable_services": {},
+        "unknown_services": {},
     }
     
     for service, resources in cfn_resources.items():
         service_norm = normalize_service_name(service)
-        
-        # Check if service is taggable
         matched_taggable = None
         matched_untaggable = None
         
@@ -132,7 +114,6 @@ def generate_report(results: dict, output_dir: Path) -> None:
     
     console.print("\n[bold cyan]═══ RESOURCE-LEVEL ANALYSIS ═══[/bold cyan]\n")
     
-    # Count resources
     taggable_svc_resources = sum(
         len(v["resources"]) for v in results["in_taggable_services"].values()
     )
@@ -166,7 +147,6 @@ def generate_report(results: dict, output_dir: Path) -> None:
     
     console.print(table)
     
-    # Resources in untaggable services = ALL untaggable
     console.print("\n[bold red]RESOURCES IN UNTAGGABLE SERVICES[/bold red]")
     console.print("[dim]All resources in these services cannot be tagged[/dim]\n")
     
@@ -177,7 +157,6 @@ def generate_report(results: dict, output_dir: Path) -> None:
             console.print(f"  - {r}")
             all_untaggable_resources.append(r)
     
-    # Save report
     output_dir.mkdir(parents=True, exist_ok=True)
     
     report = {
@@ -212,7 +191,6 @@ def main():
     
     output_dir = Path(__file__).parent / "output"
     
-    # Load service-level data
     service_data = load_service_level_data(output_dir)
     
     if not service_data.get("untaggable_services"):
@@ -222,15 +200,11 @@ def main():
     console.print(f"[green]Loaded {len(service_data['taggable_services'])} taggable services[/green]")
     console.print(f"[green]Loaded {len(service_data['untaggable_services'])} untaggable services[/green]")
     
-    # Get CFN resources
     cfn_resources = get_cfn_resources()
     total_resources = sum(len(r) for r in cfn_resources.values())
     console.print(f"[green]Found {total_resources} resource types across {len(cfn_resources)} services[/green]")
     
-    # Analyze
     results = identify_resource_level_untaggables(cfn_resources, service_data)
-    
-    # Generate report
     generate_report(results, output_dir)
 
 

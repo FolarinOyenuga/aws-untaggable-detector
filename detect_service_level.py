@@ -43,37 +43,12 @@ def get_all_services() -> list[dict]:
 
 
 def check_tagging_support(service_url: str) -> dict:
-    """
-    Check if a service has tagging API actions.
-    
-    Returns dict with:
-    - has_tagging: bool
-    - tagging_actions: list of found tagging actions
-    """
+    """Check if a service has tagging API actions."""
     try:
         response = requests.get(service_url, timeout=15)
-        soup = BeautifulSoup(response.text, "lxml")
-        
-        # Find all action names in the page
         page_text = response.text.lower()
-        
-        # Common tagging action patterns
-        tagging_patterns = [
-            "tagresource",
-            "untagresource",
-            "createtags",
-            "deletetags",
-            "addtags",
-            "removetags",
-            "listtags",
-            "listtagsforresource",
-            "tag",  # Generic but we'll be more specific
-        ]
-        
         found_actions = []
         
-        # Look for actual tagging actions in the actions table
-        # Actions that modify tags (not just list)
         if "tagresource" in page_text:
             found_actions.append("TagResource")
         if "untagresource" in page_text:
@@ -87,7 +62,6 @@ def check_tagging_support(service_url: str) -> dict:
         if "removetags" in page_text:
             found_actions.append("RemoveTags*")
         
-        # A service supports tagging if it can add AND remove tags
         can_tag = any(a in ["TagResource", "CreateTags", "AddTags*"] for a in found_actions)
         can_untag = any(a in ["UntagResource", "DeleteTags", "RemoveTags*"] for a in found_actions)
         
@@ -132,7 +106,6 @@ def main():
         else:
             untaggable.append(service)
     
-    # Results
     console.print("\n[bold cyan]═══ RESULTS ═══[/bold cyan]\n")
     
     table = Table(title="API-Level Tagging Support")
@@ -151,7 +124,6 @@ def main():
     for svc in sorted(untaggable, key=lambda x: x["name"]):
         console.print(f"  - {svc['name']}")
     
-    # Save report
     output_dir = Path(__file__).parent / "output"
     output_dir.mkdir(parents=True, exist_ok=True)
     
