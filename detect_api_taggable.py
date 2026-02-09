@@ -13,6 +13,7 @@ For each service with tagging support, extracts:
 
 import json
 import re
+import time
 from datetime import datetime
 from bs4 import BeautifulSoup
 from pathlib import Path
@@ -26,6 +27,8 @@ console = Console()
 session = get_cached_session()
 
 MIN_EXPECTED_SERVICES = 400
+MAX_RETRIES = 3
+RETRY_DELAY = 2
 
 SERVICE_AUTH_REF_BASE = "https://docs.aws.amazon.com/service-authorization/latest/reference"
 SERVICE_AUTH_REF_TOC = f"{SERVICE_AUTH_REF_BASE}/reference_policies_actions-resources-contextkeys.html"
@@ -155,11 +158,27 @@ def extract_tagging_actions_and_resources(soup: BeautifulSoup) -> dict:
     }
 
 
+def fetch_with_retry(url: str, max_retries: int = MAX_RETRIES) -> str:
+    """Fetch URL with exponential backoff retry."""
+    last_error = None
+    for attempt in range(max_retries):
+        try:
+            response = session.get(url, timeout=30)
+            response.raise_for_status()
+            return response.text
+        except Exception as e:
+            last_error = e
+            if attempt < max_retries - 1:
+                delay = RETRY_DELAY * (2 ** attempt)
+                time.sleep(delay)
+    raise last_error
+
+
 def analyze_service(service: dict) -> dict:
     """Analyze a single service for resource-level tagging support."""
     try:
-        response = session.get(service["url"], timeout=15)
-        soup = BeautifulSoup(response.text, "lxml")
+        html = fetch_with_retry(service["url"])
+        soup = BeautifulSoup(html, "lxml")
         
         all_resources = extract_resource_types(soup)
         tagging_info = extract_tagging_actions_and_resources(soup)
