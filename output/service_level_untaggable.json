@@ -1,0 +1,3258 @@
+{
+  "summary": {
+    "total_services": 461,
+    "taggable_services": 305,
+    "untaggable_services": 156,
+    "errors": 0
+  },
+  "untaggable_services": [
+    "AWS Account Management",
+    "AWS Action Recommendations",
+    "AWS Activate",
+    "AWS Amplify Admin",
+    "AWS App Mesh Preview",
+    "AWS App Studio",
+    "AWS App2Container",
+    "AWS Application Transformation Service",
+    "AWS Artifact",
+    "AWS Auto Scaling",
+    "AWS Backup storage",
+    "AWS Billing And Cost Management Recommended Actions",
+    "AWS Billing Console",
+    "AWS Cloud Control API",
+    "AWS CloudShell",
+    "AWS CloudTrail",
+    "AWS CloudTrail Data",
+    "AWS CodeBuild",
+    "AWS CodeDeploy secure host commands service",
+    "AWS CodeStar",
+    "AWS Compute Optimizer",
+    "AWS Connector Service",
+    "AWS Consolidated Billing",
+    "AWS Control Catalog",
+    "AWS Cost Optimization Hub",
+    "AWS Customer Verification Service",
+    "AWS Data Pipeline",
+    "AWS DevOps Agent Service",
+    "AWS Directory Service Data",
+    "AWS Elastic Beanstalk",
+    "AWS Elastic Load Balancing",
+    "AWS Elastic Load Balancing V2",
+    "AWS Elemental Appliances and Software",
+    "AWS Elemental Appliances and Software Activation Service",
+    "AWS Elemental Support Cases",
+    "AWS Elemental Support Content",
+    "AWS Free Tier",
+    "AWS Health APIs and Notifications",
+    "AWS IAM Identity Center OIDC service",
+    "AWS IAM Identity Center directory",
+    "AWS IQ",
+    "AWS IQ Permissions",
+    "AWS Identity Store",
+    "AWS Identity Store Auth",
+    "AWS Identity Sync",
+    "AWS Identity and Access Management (IAM)",
+    "AWS Import Export Disk Service",
+    "AWS IoT Device Tester",
+    "AWS IoT Jobs DataPlane",
+    "AWS Lake Formation",
+    "AWS MCP Server",
+    "AWS Management Console Mobile App",
+    "AWS Marketplace",
+    "AWS Marketplace Commerce Analytics Service",
+    "AWS Marketplace Discovery",
+    "AWS Marketplace Entitlement Service",
+    "AWS Marketplace Image Building Service",
+    "AWS Marketplace Management Portal",
+    "AWS Marketplace Metering Service",
+    "AWS Marketplace Private Marketplace",
+    "AWS Marketplace Procurement Systems Integration",
+    "AWS Marketplace Reporting",
+    "AWS Marketplace Seller Reporting",
+    "AWS Microservice Extractor for .NET",
+    "AWS Migration Acceleration Program Credits",
+    "AWS Migration Hub Strategy Recommendations",
+    "AWS Network Manager Chat",
+    "AWS Partner central account management",
+    "AWS Price List",
+    "AWS PricingPlanManager Service",
+    "AWS Private Certificate Authority",
+    "AWS PrivateLink",
+    "AWS Security Agent",
+    "AWS Security Token Service",
+    "AWS Server Migration Service",
+    "AWS Serverless Application Repository",
+    "AWS Service for managing AWS Management Console user experience capabilities.",
+    "AWS Shield network security director",
+    "AWS Signin",
+    "AWS Snowball",
+    "AWS Support",
+    "AWS Support App in Slack",
+    "AWS Support Console",
+    "AWS Support Plans",
+    "AWS Sustainability",
+    "AWS Systems Manager GUI Connect",
+    "AWS Tax Settings",
+    "AWS Tiros",
+    "AWS Trusted Advisor",
+    "AWS User Subscriptions",
+    "AWS Verified Access",
+    "Amazon API Gateway",
+    "Amazon API Gateway Management",
+    "Amazon API Gateway Management V2",
+    "Amazon Application Recovery Controller - Zonal Shift",
+    "Amazon Bedrock Powered by AWS Mantle",
+    "Amazon CloudFront KeyValueStore",
+    "Amazon CloudSearch",
+    "Amazon CodeGuru",
+    "Amazon Cognito Sync",
+    "Amazon Comprehend Medical",
+    "Amazon DevOps Guru",
+    "Amazon EC2 Auto Scaling",
+    "Amazon EC2 Instance Connect",
+    "Amazon ECS MCP Service",
+    "Amazon EKS Auth",
+    "Amazon EKS MCP Server",
+    "Amazon Elastic Block Store",
+    "Amazon Elastic MapReduce",
+    "Amazon Elastic Transcoder",
+    "Amazon FinSpace API",
+    "Amazon FreeRTOS",
+    "Amazon GroundTruth Labeling",
+    "Amazon Inspector",
+    "Amazon InspectorScan",
+    "Amazon Kinesis Firehose",
+    "Amazon Location Service Maps",
+    "Amazon Location Service Places",
+    "Amazon Location Service Routes",
+    "Amazon Machine Learning",
+    "Amazon Managed Blockchain Query",
+    "Amazon Mechanical Turk",
+    "Amazon Message Delivery Service",
+    "Amazon Message Gateway Service",
+    "Amazon Mobile Analytics",
+    "Amazon Neptune",
+    "Amazon Nova Act",
+    "Amazon OpenSearch",
+    "Amazon OpenSearch Service",
+    "Amazon Pinpoint SMS and Voice Service",
+    "Amazon Polly",
+    "Amazon RDS Data API",
+    "Amazon RDS IAM Authentication",
+    "Amazon RHEL Knowledgebase Portal",
+    "Amazon Redshift Data API",
+    "Amazon Route 53",
+    "Amazon Route 53 Domains",
+    "Amazon Route 53 Recovery Cluster",
+    "Amazon S3 Object Lambda",
+    "Amazon S3 on Outposts",
+    "Amazon SES",
+    "Amazon SQS",
+    "Amazon SageMaker",
+    "Amazon SageMaker Unified Studio MCP",
+    "Amazon SageMaker data science assistant",
+    "Amazon SageMaker with MLflow",
+    "Amazon SimpleDB",
+    "Amazon VPC Lattice Services",
+    "Amazon WorkDocs",
+    "Amazon WorkMail Message Flow",
+    "Amazon WorkSpaces Application Manager",
+    "AmazonMediaImport",
+    "Apache Kafka APIs for Amazon MSK clusters",
+    "Application Discovery Arsenal",
+    "Database Query Metadata Service",
+    "Tag Editor"
+  ],
+  "taggable_services": [
+    "AWS Amplify",
+    "AWS Amplify UI Builder",
+    "AWS App Mesh",
+    "AWS App Runner",
+    "AWS AppConfig",
+    "AWS AppFabric",
+    "AWS AppSync",
+    "AWS Application Auto Scaling",
+    "AWS Application Discovery Service",
+    "AWS Application Migration Service",
+    "AWS Audit Manager",
+    "AWS B2B Data Interchange",
+    "AWS Backup",
+    "AWS Backup Gateway",
+    "AWS Backup Search",
+    "AWS Batch",
+    "AWS Billing",
+    "AWS Billing And Cost Management Data Exports",
+    "AWS Billing And Cost Management Pricing Calculator",
+    "AWS Billing Conductor",
+    "AWS Billing and Cost Management Dashboards",
+    "AWS Budget Service",
+    "AWS BugBust",
+    "AWS Certificate Manager",
+    "AWS Chatbot",
+    "AWS Clean Rooms",
+    "AWS Clean Rooms ML",
+    "AWS Cloud Map",
+    "AWS Cloud9",
+    "AWS CloudFormation",
+    "AWS CloudHSM",
+    "AWS CloudWatch RUM",
+    "AWS CodeArtifact",
+    "AWS CodeCommit",
+    "AWS CodeConnections",
+    "AWS CodeDeploy",
+    "AWS CodePipeline",
+    "AWS CodeStar Connections",
+    "AWS CodeStar Notifications",
+    "AWS Compute Optimizer Automation",
+    "AWS Config",
+    "AWS Control Tower",
+    "AWS Cost Explorer Service",
+    "AWS Cost and Usage Report",
+    "AWS Data Exchange",
+    "AWS DataSync",
+    "AWS Database Migration Service",
+    "AWS Deadline Cloud",
+    "AWS Device Farm",
+    "AWS Diagnostic tools",
+    "AWS Direct Connect",
+    "AWS Directory Service",
+    "AWS Elastic Disaster Recovery",
+    "AWS Elemental MediaConnect",
+    "AWS Elemental MediaConvert",
+    "AWS Elemental MediaLive",
+    "AWS Elemental MediaPackage",
+    "AWS Elemental MediaPackage V2",
+    "AWS Elemental MediaPackage VOD",
+    "AWS Elemental MediaStore",
+    "AWS Elemental MediaTailor",
+    "AWS End User Messaging SMS and Voice V2",
+    "AWS End User Messaging Social",
+    "AWS Entity Resolution",
+    "AWS Fault Injection Service",
+    "AWS Firewall Manager",
+    "AWS Global Accelerator",
+    "AWS Glue",
+    "AWS Glue DataBrew",
+    "AWS Ground Station",
+    "AWS HealthImaging",
+    "AWS HealthLake",
+    "AWS HealthOmics",
+    "AWS IAM Access Analyzer",
+    "AWS IAM Identity Center",
+    "AWS Identity and Access Management Roles Anywhere",
+    "AWS Invoicing Service",
+    "AWS IoT",
+    "AWS IoT Analytics",
+    "AWS IoT Core Device Advisor",
+    "AWS IoT Events",
+    "AWS IoT Fleet Hub for Device Management",
+    "AWS IoT FleetWise",
+    "AWS IoT Greengrass",
+    "AWS IoT Greengrass V2",
+    "AWS IoT Managed Integrations",
+    "AWS IoT SiteWise",
+    "AWS IoT TwinMaker",
+    "AWS IoT Wireless",
+    "AWS Key Management Service",
+    "AWS Lambda",
+    "AWS Launch Wizard",
+    "AWS License Manager",
+    "AWS License Manager Linux Subscriptions Manager",
+    "AWS License Manager User Subscriptions",
+    "AWS MWAA Serverless",
+    "AWS Mainframe Modernization Application Testing",
+    "AWS Mainframe Modernization Service",
+    "AWS Marketplace Catalog",
+    "AWS Marketplace Deployment Service",
+    "AWS Marketplace Vendor Insights",
+    "AWS Migration Hub",
+    "AWS Migration Hub Orchestrator",
+    "AWS Migration Hub Refactor Spaces",
+    "AWS Network Firewall",
+    "AWS Network Manager",
+    "AWS OpsWorks",
+    "AWS OpsWorks Configuration Management",
+    "AWS Organizations",
+    "AWS Outposts",
+    "AWS Panorama",
+    "AWS Parallel Computing Service",
+    "AWS Partner Central",
+    "AWS Payment Cryptography",
+    "AWS Payments",
+    "AWS Performance Insights",
+    "AWS Private CA Connector for Active Directory",
+    "AWS Private CA Connector for SCEP",
+    "AWS Proton",
+    "AWS Purchase Orders Console",
+    "AWS RTB Fabric",
+    "AWS Recycle Bin",
+    "AWS Resilience Hub",
+    "AWS Resource Access Manager (RAM)",
+    "AWS Resource Explorer",
+    "AWS Resource Groups",
+    "AWS RoboMaker",
+    "AWS Route53 Global Resolver",
+    "AWS SQL Workbench",
+    "AWS Savings Plans",
+    "AWS Secrets Manager",
+    "AWS Security Hub",
+    "AWS Security Incident Response",
+    "AWS Service - Oracle Database@AWS",
+    "AWS Service Catalog",
+    "AWS Shield",
+    "AWS Signer",
+    "AWS SimSpace Weaver",
+    "AWS Snow Device Management",
+    "AWS Step Functions",
+    "AWS Storage Gateway",
+    "AWS Supply Chain",
+    "AWS Systems Manager",
+    "AWS Systems Manager Incident Manager",
+    "AWS Systems Manager Incident Manager Contacts",
+    "AWS Systems Manager Quick Setup",
+    "AWS Systems Manager for SAP",
+    "AWS Telco Network Builder",
+    "AWS Transfer Family",
+    "AWS Transform",
+    "AWS Transform custom",
+    "AWS User Notifications",
+    "AWS User Notifications Contacts",
+    "AWS WAF",
+    "AWS WAF Regional",
+    "AWS WAF V2",
+    "AWS Well-Architected Tool",
+    "AWS Wickr",
+    "AWS WorkSpaces Managed Instances",
+    "AWS X-Ray",
+    "AWS rePost Private",
+    "AWS service providing managed private networks",
+    "Alexa for Business",
+    "Amazon AI Operations",
+    "Amazon ARC Region switch",
+    "Amazon AppFlow",
+    "Amazon AppIntegrations",
+    "Amazon AppStream 2.0",
+    "Amazon Athena",
+    "Amazon Aurora DSQL",
+    "Amazon Bedrock",
+    "Amazon Bedrock Agentcore",
+    "Amazon Braket",
+    "Amazon Chime",
+    "Amazon Cloud Directory",
+    "Amazon CloudFront",
+    "Amazon CloudWatch",
+    "Amazon CloudWatch Application Insights",
+    "Amazon CloudWatch Application Signals",
+    "Amazon CloudWatch Evidently",
+    "Amazon CloudWatch Internet Monitor",
+    "Amazon CloudWatch Logs",
+    "Amazon CloudWatch Network Synthetic Monitor",
+    "Amazon CloudWatch Observability Access Manager",
+    "Amazon CloudWatch Observability Admin Service",
+    "Amazon CloudWatch Synthetics",
+    "Amazon CodeCatalyst",
+    "Amazon CodeGuru Profiler",
+    "Amazon CodeGuru Reviewer",
+    "Amazon CodeGuru Security",
+    "Amazon CodeWhisperer",
+    "Amazon Cognito Identity",
+    "Amazon Cognito User Pools",
+    "Amazon Comprehend",
+    "Amazon Connect",
+    "Amazon Connect Cases",
+    "Amazon Connect Customer Profiles",
+    "Amazon Connect Outbound Campaigns",
+    "Amazon Connect Voice ID",
+    "Amazon Data Lifecycle Manager",
+    "Amazon DataZone",
+    "Amazon Detective",
+    "Amazon DocumentDB Elastic Clusters",
+    "Amazon DynamoDB",
+    "Amazon DynamoDB Accelerator (DAX)",
+    "Amazon EC2",
+    "Amazon EC2 Image Builder",
+    "Amazon EMR Serverless",
+    "Amazon EMR on EKS (EMR Containers)",
+    "Amazon ElastiCache",
+    "Amazon Elastic Container Registry",
+    "Amazon Elastic Container Registry Public",
+    "Amazon Elastic Container Service",
+    "Amazon Elastic File System",
+    "Amazon Elastic Kubernetes Service",
+    "Amazon Elastic VMware Service",
+    "Amazon EventBridge",
+    "Amazon EventBridge Pipes",
+    "Amazon EventBridge Scheduler",
+    "Amazon EventBridge Schemas",
+    "Amazon FSx",
+    "Amazon FinSpace",
+    "Amazon Forecast",
+    "Amazon Fraud Detector",
+    "Amazon GameLift Servers",
+    "Amazon GameLift Streams",
+    "Amazon GuardDuty",
+    "Amazon Honeycode",
+    "Amazon Inspector2",
+    "Amazon Interactive Video Service",
+    "Amazon Interactive Video Service Chat",
+    "Amazon Kendra",
+    "Amazon Kendra Intelligent Ranking",
+    "Amazon Keyspaces (for Apache Cassandra)",
+    "Amazon Kinesis Analytics",
+    "Amazon Kinesis Analytics V2",
+    "Amazon Kinesis Data Streams",
+    "Amazon Kinesis Video Streams",
+    "Amazon Lex",
+    "Amazon Lex V2",
+    "Amazon Lightsail",
+    "Amazon Location",
+    "Amazon Lookout for Equipment",
+    "Amazon Lookout for Metrics",
+    "Amazon Lookout for Vision",
+    "Amazon MQ",
+    "Amazon Macie",
+    "Amazon Managed Blockchain",
+    "Amazon Managed Grafana",
+    "Amazon Managed Service for Prometheus",
+    "Amazon Managed Streaming for Apache Kafka",
+    "Amazon Managed Streaming for Kafka Connect",
+    "Amazon Managed Workflows for Apache Airflow",
+    "Amazon MemoryDB",
+    "Amazon Monitron",
+    "Amazon Neptune Analytics",
+    "Amazon Nimble Studio",
+    "Amazon One Enterprise",
+    "Amazon OpenSearch Ingestion",
+    "Amazon OpenSearch Serverless",
+    "Amazon Personalize",
+    "Amazon Pinpoint",
+    "Amazon Pinpoint Email Service",
+    "Amazon Q",
+    "Amazon Q Business",
+    "Amazon Q Business Q Apps",
+    "Amazon Q Developer",
+    "Amazon Q in Connect",
+    "Amazon QLDB",
+    "Amazon QuickSight",
+    "Amazon RDS",
+    "Amazon Redshift",
+    "Amazon Redshift Serverless",
+    "Amazon Rekognition",
+    "Amazon Resource Group Tagging API",
+    "Amazon Route 53 Profiles",
+    "Amazon Route 53 Recovery Controls",
+    "Amazon Route 53 Recovery Readiness",
+    "Amazon Route 53 Resolver",
+    "Amazon S3",
+    "Amazon S3 Express",
+    "Amazon S3 Glacier",
+    "Amazon S3 Tables",
+    "Amazon S3 Vectors",
+    "Amazon SNS",
+    "Amazon SageMaker geospatial capabilities",
+    "Amazon Security Lake",
+    "Amazon Simple Email Service - Mail Manager",
+    "Amazon Simple Email Service v2",
+    "Amazon Simple Workflow Service",
+    "Amazon Textract",
+    "Amazon Timestream",
+    "Amazon Timestream InfluxDB",
+    "Amazon Transcribe",
+    "Amazon Translate",
+    "Amazon VPC Lattice",
+    "Amazon Verified Permissions",
+    "Amazon WorkLink",
+    "Amazon WorkMail",
+    "Amazon WorkSpaces",
+    "Amazon WorkSpaces Secure Browser",
+    "Amazon WorkSpaces Thin Client",
+    "Multi-party approval",
+    "Network Flow Monitor",
+    "Service Quotas"
+  ],
+  "detailed": {
+    "untaggable": [
+      {
+        "name": "AWS Account Management",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsaccountmanagement.html"
+      },
+      {
+        "name": "AWS Action Recommendations",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsactionrecommendations.html"
+      },
+      {
+        "name": "AWS Activate",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsactivate.html"
+      },
+      {
+        "name": "AmazonMediaImport",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonmediaimport.html"
+      },
+      {
+        "name": "AWS Amplify Admin",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsamplifyadmin.html"
+      },
+      {
+        "name": "Apache Kafka APIs for Amazon MSK clusters",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_apachekafkaapisforamazonmskclusters.html"
+      },
+      {
+        "name": "Amazon API Gateway",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonapigateway.html"
+      },
+      {
+        "name": "Amazon API Gateway Management",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonapigatewaymanagement.html"
+      },
+      {
+        "name": "Amazon API Gateway Management V2",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonapigatewaymanagementv2.html"
+      },
+      {
+        "name": "AWS App Mesh Preview",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsappmeshpreview.html"
+      },
+      {
+        "name": "AWS App Studio",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsappstudio.html"
+      },
+      {
+        "name": "AWS App2Container",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsapp2container.html"
+      },
+      {
+        "name": "Application Discovery Arsenal",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_applicationdiscoveryarsenal.html"
+      },
+      {
+        "name": "Amazon Application Recovery Controller - Zonal Shift",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonapplicationrecoverycontroller-zonalshift.html"
+      },
+      {
+        "name": "AWS Application Transformation Service",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsapplicationtransformationservice.html"
+      },
+      {
+        "name": "AWS Artifact",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsartifact.html"
+      },
+      {
+        "name": "AWS Auto Scaling",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsautoscaling.html"
+      },
+      {
+        "name": "AWS Backup storage",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbackupstorage.html"
+      },
+      {
+        "name": "Amazon Bedrock Powered by AWS Mantle",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonbedrockpoweredbyawsmantle.html"
+      },
+      {
+        "name": "AWS Billing And Cost Management Recommended Actions",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbillingandcostmanagementrecommendedactions.html"
+      },
+      {
+        "name": "AWS Billing Console",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbillingconsole.html"
+      },
+      {
+        "name": "AWS Cloud Control API",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscloudcontrolapi.html"
+      },
+      {
+        "name": "Amazon CloudFront KeyValueStore",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoncloudfrontkeyvaluestore.html"
+      },
+      {
+        "name": "Amazon CloudSearch",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoncloudsearch.html"
+      },
+      {
+        "name": "AWS CloudShell",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscloudshell.html"
+      },
+      {
+        "name": "AWS CloudTrail",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscloudtrail.html"
+      },
+      {
+        "name": "AWS CloudTrail Data",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscloudtraildata.html"
+      },
+      {
+        "name": "AWS CodeBuild",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscodebuild.html"
+      },
+      {
+        "name": "AWS CodeDeploy secure host commands service",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscodedeploysecurehostcommandsservice.html"
+      },
+      {
+        "name": "Amazon CodeGuru",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoncodeguru.html"
+      },
+      {
+        "name": "AWS CodeStar",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscodestar.html"
+      },
+      {
+        "name": "Amazon Cognito Sync",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoncognitosync.html"
+      },
+      {
+        "name": "Amazon Comprehend Medical",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoncomprehendmedical.html"
+      },
+      {
+        "name": "AWS Compute Optimizer",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscomputeoptimizer.html"
+      },
+      {
+        "name": "AWS Connector Service",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsconnectorservice.html"
+      },
+      {
+        "name": "AWS Management Console Mobile App",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsconsolemobileapp.html"
+      },
+      {
+        "name": "AWS Consolidated Billing",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsconsolidatedbilling.html"
+      },
+      {
+        "name": "AWS Control Catalog",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscontrolcatalog.html"
+      },
+      {
+        "name": "AWS Cost Optimization Hub",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscostoptimizationhub.html"
+      },
+      {
+        "name": "AWS Customer Verification Service",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscustomerverificationservice.html"
+      },
+      {
+        "name": "AWS Data Pipeline",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsdatapipeline.html"
+      },
+      {
+        "name": "Database Query Metadata Service",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_databasequerymetadataservice.html"
+      },
+      {
+        "name": "AWS DevOps Agent Service",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsdevopsagentservice.html"
+      },
+      {
+        "name": "Amazon DevOps Guru",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazondevopsguru.html"
+      },
+      {
+        "name": "AWS Directory Service Data",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsdirectoryservicedata.html"
+      },
+      {
+        "name": "Amazon EC2 Auto Scaling",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2autoscaling.html"
+      },
+      {
+        "name": "Amazon EC2 Instance Connect",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2instanceconnect.html"
+      },
+      {
+        "name": "Amazon ECS MCP Service",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonecsmcpservice.html"
+      },
+      {
+        "name": "Amazon EKS Auth",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoneksauth.html"
+      },
+      {
+        "name": "Amazon EKS MCP Server",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoneksmcpserver.html"
+      },
+      {
+        "name": "AWS Elastic Beanstalk",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awselasticbeanstalk.html"
+      },
+      {
+        "name": "Amazon Elastic Block Store",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonelasticblockstore.html"
+      },
+      {
+        "name": "AWS Elastic Load Balancing",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awselasticloadbalancing.html"
+      },
+      {
+        "name": "AWS Elastic Load Balancing V2",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awselasticloadbalancingv2.html"
+      },
+      {
+        "name": "Amazon Elastic MapReduce",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonelasticmapreduce.html"
+      },
+      {
+        "name": "Amazon Elastic Transcoder",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonelastictranscoder.html"
+      },
+      {
+        "name": "AWS Elemental Appliances and Software",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awselementalappliancesandsoftware.html"
+      },
+      {
+        "name": "AWS Elemental Appliances and Software Activation Service",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awselementalappliancesandsoftwareactivationservice.html"
+      },
+      {
+        "name": "AWS Elemental Support Cases",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awselementalsupportcases.html"
+      },
+      {
+        "name": "AWS Elemental Support Content",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awselementalsupportcontent.html"
+      },
+      {
+        "name": "Amazon FinSpace API",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonfinspaceapi.html"
+      },
+      {
+        "name": "AWS Free Tier",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsfreetier.html"
+      },
+      {
+        "name": "Amazon FreeRTOS",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonfreertos.html"
+      },
+      {
+        "name": "Amazon GroundTruth Labeling",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazongroundtruthlabeling.html"
+      },
+      {
+        "name": "AWS Health APIs and Notifications",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awshealthapisandnotifications.html"
+      },
+      {
+        "name": "AWS IAM Identity Center directory",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiamidentitycenterdirectory.html"
+      },
+      {
+        "name": "AWS IAM Identity Center OIDC service",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiamidentitycenteroidcservice.html"
+      },
+      {
+        "name": "AWS Identity and Access Management (IAM)",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsidentityandaccessmanagementiam.html"
+      },
+      {
+        "name": "AWS Identity Store",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsidentitystore.html"
+      },
+      {
+        "name": "AWS Identity Store Auth",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsidentitystoreauth.html"
+      },
+      {
+        "name": "AWS Identity Sync",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsidentitysync.html"
+      },
+      {
+        "name": "AWS Import Export Disk Service",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsimportexportdiskservice.html"
+      },
+      {
+        "name": "Amazon Inspector",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoninspector.html"
+      },
+      {
+        "name": "Amazon InspectorScan",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoninspectorscan.html"
+      },
+      {
+        "name": "AWS IoT Device Tester",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiotdevicetester.html"
+      },
+      {
+        "name": "AWS IoT Jobs DataPlane",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiotjobsdataplane.html"
+      },
+      {
+        "name": "AWS IQ",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiq.html"
+      },
+      {
+        "name": "AWS IQ Permissions",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiqpermissions.html"
+      },
+      {
+        "name": "Amazon Kinesis Firehose",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonkinesisfirehose.html"
+      },
+      {
+        "name": "AWS Lake Formation",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awslakeformation.html"
+      },
+      {
+        "name": "Amazon Location Service Maps",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonlocationservicemaps.html"
+      },
+      {
+        "name": "Amazon Location Service Places",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonlocationserviceplaces.html"
+      },
+      {
+        "name": "Amazon Location Service Routes",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonlocationserviceroutes.html"
+      },
+      {
+        "name": "Amazon Machine Learning",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonmachinelearning.html"
+      },
+      {
+        "name": "Amazon Managed Blockchain Query",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonmanagedblockchainquery.html"
+      },
+      {
+        "name": "AWS Marketplace",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmarketplace.html"
+      },
+      {
+        "name": "AWS Marketplace Commerce Analytics Service",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmarketplacecommerceanalyticsservice.html"
+      },
+      {
+        "name": "AWS Marketplace Discovery",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmarketplacediscovery.html"
+      },
+      {
+        "name": "AWS Marketplace Entitlement Service",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmarketplaceentitlementservice.html"
+      },
+      {
+        "name": "AWS Marketplace Image Building Service",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmarketplaceimagebuildingservice.html"
+      },
+      {
+        "name": "AWS Marketplace Management Portal",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmarketplacemanagementportal.html"
+      },
+      {
+        "name": "AWS Marketplace Metering Service",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmarketplacemeteringservice.html"
+      },
+      {
+        "name": "AWS Marketplace Private Marketplace",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmarketplaceprivatemarketplace.html"
+      },
+      {
+        "name": "AWS Marketplace Procurement Systems Integration",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmarketplaceprocurementsystemsintegration.html"
+      },
+      {
+        "name": "AWS Marketplace Reporting",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmarketplacereporting.html"
+      },
+      {
+        "name": "AWS Marketplace Seller Reporting",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmarketplacesellerreporting.html"
+      },
+      {
+        "name": "AWS MCP Server",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmcpserver.html"
+      },
+      {
+        "name": "Amazon Mechanical Turk",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonmechanicalturk.html"
+      },
+      {
+        "name": "Amazon Message Delivery Service",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonmessagedeliveryservice.html"
+      },
+      {
+        "name": "Amazon Message Gateway Service",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonmessagegatewayservice.html"
+      },
+      {
+        "name": "AWS Microservice Extractor for .NET",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmicroserviceextractorfor.net.html"
+      },
+      {
+        "name": "AWS Migration Acceleration Program Credits",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmigrationaccelerationprogramcredits.html"
+      },
+      {
+        "name": "AWS Migration Hub Strategy Recommendations",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmigrationhubstrategyrecommendations.html"
+      },
+      {
+        "name": "Amazon Mobile Analytics",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonmobileanalytics.html"
+      },
+      {
+        "name": "Amazon Neptune",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonneptune.html"
+      },
+      {
+        "name": "AWS Network Manager Chat",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsnetworkmanagerchat.html"
+      },
+      {
+        "name": "Amazon Nova Act",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonnovaact.html"
+      },
+      {
+        "name": "Amazon OpenSearch",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonopensearch.html"
+      },
+      {
+        "name": "Amazon OpenSearch Service",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonopensearchservice.html"
+      },
+      {
+        "name": "AWS Partner central account management",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awspartnercentralaccountmanagement.html"
+      },
+      {
+        "name": "Amazon Pinpoint SMS and Voice Service",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonpinpointsmsandvoiceservice.html"
+      },
+      {
+        "name": "Amazon Polly",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonpolly.html"
+      },
+      {
+        "name": "AWS Price List",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awspricelist.html"
+      },
+      {
+        "name": "AWS PricingPlanManager Service",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awspricingplanmanagerservice.html"
+      },
+      {
+        "name": "AWS Private Certificate Authority",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsprivatecertificateauthority.html"
+      },
+      {
+        "name": "AWS PrivateLink",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsprivatelink.html"
+      },
+      {
+        "name": "Amazon RDS Data API",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonrdsdataapi.html"
+      },
+      {
+        "name": "Amazon RDS IAM Authentication",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonrdsiamauthentication.html"
+      },
+      {
+        "name": "Amazon Redshift Data API",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonredshiftdataapi.html"
+      },
+      {
+        "name": "Amazon RHEL Knowledgebase Portal",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonrhelknowledgebaseportal.html"
+      },
+      {
+        "name": "Amazon Route 53",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonroute53.html"
+      },
+      {
+        "name": "Amazon Route 53 Domains",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonroute53domains.html"
+      },
+      {
+        "name": "Amazon Route 53 Recovery Cluster",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonroute53recoverycluster.html"
+      },
+      {
+        "name": "Amazon S3 Object Lambda",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3objectlambda.html"
+      },
+      {
+        "name": "Amazon S3 on Outposts",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3onoutposts.html"
+      },
+      {
+        "name": "Amazon SageMaker",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonsagemaker.html"
+      },
+      {
+        "name": "Amazon SageMaker data science assistant",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonsagemakerdatascienceassistant.html"
+      },
+      {
+        "name": "Amazon SageMaker Unified Studio MCP",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonsagemakerunifiedstudiomcp.html"
+      },
+      {
+        "name": "Amazon SageMaker with MLflow",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonsagemakerwithmlflow.html"
+      },
+      {
+        "name": "AWS Security Agent",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssecurityagent.html"
+      },
+      {
+        "name": "AWS Security Token Service",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssecuritytokenservice.html"
+      },
+      {
+        "name": "AWS Server Migration Service",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsservermigrationservice.html"
+      },
+      {
+        "name": "AWS Serverless Application Repository",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsserverlessapplicationrepository.html"
+      },
+      {
+        "name": "AWS Service for managing AWS Management Console user experience capabilities.",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsserviceformanagingawsconsoleuserexperiencecapabilities..html"
+      },
+      {
+        "name": "Amazon SES",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonses.html"
+      },
+      {
+        "name": "AWS Shield network security director",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsshieldnetworksecuritydirector.html"
+      },
+      {
+        "name": "AWS Signin",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssignin.html"
+      },
+      {
+        "name": "Amazon SimpleDB",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonsimpledb.html"
+      },
+      {
+        "name": "AWS Snowball",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssnowball.html"
+      },
+      {
+        "name": "Amazon SQS",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonsqs.html"
+      },
+      {
+        "name": "AWS Support",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssupport.html"
+      },
+      {
+        "name": "AWS Support App in Slack",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssupportappinslack.html"
+      },
+      {
+        "name": "AWS Support Console",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssupportconsole.html"
+      },
+      {
+        "name": "AWS Support Plans",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssupportplans.html"
+      },
+      {
+        "name": "AWS Sustainability",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssustainability.html"
+      },
+      {
+        "name": "AWS Systems Manager GUI Connect",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssystemsmanagerguiconnect.html"
+      },
+      {
+        "name": "Tag Editor",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_tageditor.html"
+      },
+      {
+        "name": "AWS Tax Settings",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awstaxsettings.html"
+      },
+      {
+        "name": "AWS Tiros",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awstiros.html"
+      },
+      {
+        "name": "AWS Trusted Advisor",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awstrustedadvisor.html"
+      },
+      {
+        "name": "AWS User Subscriptions",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsusersubscriptions.html"
+      },
+      {
+        "name": "AWS Verified Access",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsverifiedaccess.html"
+      },
+      {
+        "name": "Amazon VPC Lattice Services",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonvpclatticeservices.html"
+      },
+      {
+        "name": "Amazon WorkDocs",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonworkdocs.html"
+      },
+      {
+        "name": "Amazon WorkMail Message Flow",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonworkmailmessageflow.html"
+      },
+      {
+        "name": "Amazon WorkSpaces Application Manager",
+        "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonworkspacesapplicationmanager.html"
+      }
+    ],
+    "taggable": [
+      {
+        "name": "Amazon AI Operations",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Alexa for Business",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Amplify",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Amplify UI Builder",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS App Mesh",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS App Runner",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS AppConfig",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS AppFabric",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon AppFlow",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon AppIntegrations",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Application Auto Scaling",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Application Discovery Service",
+        "tagging_actions": [
+          "CreateTags",
+          "DeleteTags"
+        ]
+      },
+      {
+        "name": "AWS Application Migration Service",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource",
+          "CreateTags",
+          "DeleteTags"
+        ]
+      },
+      {
+        "name": "Amazon AppStream 2.0",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS AppSync",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon ARC Region switch",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Athena",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Audit Manager",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Aurora DSQL",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS B2B Data Interchange",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Backup",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Backup Gateway",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Backup Search",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Batch",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Bedrock",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Bedrock Agentcore",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Billing",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Billing and Cost Management Dashboards",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Billing And Cost Management Data Exports",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Billing And Cost Management Pricing Calculator",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Billing Conductor",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Braket",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Budget Service",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS BugBust",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Certificate Manager",
+        "tagging_actions": [
+          "AddTags*",
+          "RemoveTags*"
+        ]
+      },
+      {
+        "name": "AWS Chatbot",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Chime",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Clean Rooms",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Clean Rooms ML",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Cloud Directory",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Cloud Map",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Cloud9",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS CloudFormation",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon CloudFront",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS CloudHSM",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon CloudWatch",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon CloudWatch Application Insights",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon CloudWatch Application Signals",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon CloudWatch Evidently",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon CloudWatch Internet Monitor",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon CloudWatch Logs",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon CloudWatch Network Synthetic Monitor",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon CloudWatch Observability Access Manager",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon CloudWatch Observability Admin Service",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS CloudWatch RUM",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon CloudWatch Synthetics",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS CodeArtifact",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon CodeCatalyst",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS CodeCommit",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS CodeConnections",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS CodeDeploy",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource",
+          "AddTags*",
+          "RemoveTags*"
+        ]
+      },
+      {
+        "name": "Amazon CodeGuru Profiler",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon CodeGuru Reviewer",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon CodeGuru Security",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS CodePipeline",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS CodeStar Connections",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS CodeStar Notifications",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon CodeWhisperer",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Cognito Identity",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Cognito User Pools",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Comprehend",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Compute Optimizer Automation",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Config",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Connect",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Connect Cases",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Connect Customer Profiles",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Connect Outbound Campaigns",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Connect Voice ID",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Control Tower",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Cost and Usage Report",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Cost Explorer Service",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Data Exchange",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Data Lifecycle Manager",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Database Migration Service",
+        "tagging_actions": [
+          "AddTags*",
+          "RemoveTags*"
+        ]
+      },
+      {
+        "name": "AWS DataSync",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon DataZone",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Deadline Cloud",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource",
+          "CreateTags"
+        ]
+      },
+      {
+        "name": "Amazon Detective",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Device Farm",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Diagnostic tools",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Direct Connect",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Directory Service",
+        "tagging_actions": [
+          "CreateTags",
+          "DeleteTags",
+          "AddTags*",
+          "RemoveTags*"
+        ]
+      },
+      {
+        "name": "Amazon DocumentDB Elastic Clusters",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon DynamoDB",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon DynamoDB Accelerator (DAX)",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon EC2",
+        "tagging_actions": [
+          "CreateTags",
+          "DeleteTags"
+        ]
+      },
+      {
+        "name": "Amazon EC2 Image Builder",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Elastic Container Registry",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Elastic Container Registry Public",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Elastic Container Service",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Elastic Disaster Recovery",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource",
+          "CreateTags"
+        ]
+      },
+      {
+        "name": "Amazon Elastic File System",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource",
+          "CreateTags",
+          "DeleteTags"
+        ]
+      },
+      {
+        "name": "Amazon Elastic Kubernetes Service",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Elastic VMware Service",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource",
+          "CreateTags"
+        ]
+      },
+      {
+        "name": "Amazon ElastiCache",
+        "tagging_actions": [
+          "CreateTags",
+          "AddTags*",
+          "RemoveTags*"
+        ]
+      },
+      {
+        "name": "AWS Elemental MediaConnect",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Elemental MediaConvert",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Elemental MediaLive",
+        "tagging_actions": [
+          "CreateTags",
+          "DeleteTags"
+        ]
+      },
+      {
+        "name": "AWS Elemental MediaPackage",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Elemental MediaPackage V2",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Elemental MediaPackage VOD",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Elemental MediaStore",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Elemental MediaTailor",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon EMR on EKS (EMR Containers)",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon EMR Serverless",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS End User Messaging SMS and Voice V2",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS End User Messaging Social",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Entity Resolution",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon EventBridge",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon EventBridge Pipes",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon EventBridge Scheduler",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon EventBridge Schemas",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Fault Injection Service",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon FinSpace",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Firewall Manager",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Forecast",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Fraud Detector",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon FSx",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon GameLift Servers",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon GameLift Streams",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Global Accelerator",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Glue",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Glue DataBrew",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Ground Station",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon GuardDuty",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS HealthImaging",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS HealthLake",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS HealthOmics",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Honeycode",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS IAM Access Analyzer",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS IAM Identity Center",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Identity and Access Management Roles Anywhere",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Inspector2",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Interactive Video Service",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Interactive Video Service Chat",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Invoicing Service",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS IoT",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS IoT Analytics",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS IoT Core Device Advisor",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS IoT Events",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS IoT Fleet Hub for Device Management",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS IoT FleetWise",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS IoT Greengrass",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS IoT Greengrass V2",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS IoT Managed Integrations",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS IoT SiteWise",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS IoT TwinMaker",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS IoT Wireless",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Kendra",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Kendra Intelligent Ranking",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Key Management Service",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Keyspaces (for Apache Cassandra)",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Kinesis Analytics",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Kinesis Analytics V2",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Kinesis Data Streams",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource",
+          "AddTags*",
+          "RemoveTags*"
+        ]
+      },
+      {
+        "name": "Amazon Kinesis Video Streams",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Lambda",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Launch Wizard",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Lex",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Lex V2",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS License Manager",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS License Manager Linux Subscriptions Manager",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS License Manager User Subscriptions",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Lightsail",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Location",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Lookout for Equipment",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Lookout for Metrics",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Lookout for Vision",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Macie",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Mainframe Modernization Application Testing",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Mainframe Modernization Service",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Managed Blockchain",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Managed Grafana",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Managed Service for Prometheus",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Managed Streaming for Apache Kafka",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource",
+          "CreateTags"
+        ]
+      },
+      {
+        "name": "Amazon Managed Streaming for Kafka Connect",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Managed Workflows for Apache Airflow",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Marketplace Catalog",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Marketplace Deployment Service",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Marketplace Vendor Insights",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon MemoryDB",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Migration Hub",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Migration Hub Orchestrator",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Migration Hub Refactor Spaces",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Monitron",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon MQ",
+        "tagging_actions": [
+          "CreateTags",
+          "DeleteTags"
+        ]
+      },
+      {
+        "name": "Multi-party approval",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS MWAA Serverless",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Neptune Analytics",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Network Firewall",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Network Flow Monitor",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Network Manager",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Nimble Studio",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon One Enterprise",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon OpenSearch Ingestion",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon OpenSearch Serverless",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS OpsWorks",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS OpsWorks Configuration Management",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Organizations",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Outposts",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Panorama",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Parallel Computing Service",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource",
+          "CreateTags"
+        ]
+      },
+      {
+        "name": "AWS Partner Central",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Payment Cryptography",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Payments",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Performance Insights",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Personalize",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Pinpoint",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Pinpoint Email Service",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Private CA Connector for Active Directory",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource",
+          "CreateTags"
+        ]
+      },
+      {
+        "name": "AWS Private CA Connector for SCEP",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Proton",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Purchase Orders Console",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Q",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Q Business",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Q Business Q Apps",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Q Developer",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Q in Connect",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon QLDB",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon QuickSight",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon RDS",
+        "tagging_actions": [
+          "TagResource",
+          "AddTags*",
+          "RemoveTags*"
+        ]
+      },
+      {
+        "name": "AWS Recycle Bin",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Redshift",
+        "tagging_actions": [
+          "TagResource",
+          "CreateTags",
+          "DeleteTags"
+        ]
+      },
+      {
+        "name": "Amazon Redshift Serverless",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Rekognition",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS rePost Private",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Resilience Hub",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Resource Access Manager (RAM)",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Resource Explorer",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Resource Group Tagging API",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Resource Groups",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS RoboMaker",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Route 53 Profiles",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Route 53 Recovery Controls",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Route 53 Recovery Readiness",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Route 53 Resolver",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Route53 Global Resolver",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS RTB Fabric",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon S3",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon S3 Express",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon S3 Glacier",
+        "tagging_actions": [
+          "AddTags*",
+          "RemoveTags*"
+        ]
+      },
+      {
+        "name": "Amazon S3 Tables",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon S3 Vectors",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon SageMaker geospatial capabilities",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Savings Plans",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Secrets Manager",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Security Hub",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Security Incident Response",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Security Lake",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Service - Oracle Database@AWS",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Service Catalog",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS service providing managed private networks",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Service Quotas",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Shield",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Signer",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Simple Email Service - Mail Manager",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Simple Email Service v2",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Simple Workflow Service",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS SimSpace Weaver",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Snow Device Management",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon SNS",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS SQL Workbench",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Step Functions",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Storage Gateway",
+        "tagging_actions": [
+          "AddTags*",
+          "RemoveTags*"
+        ]
+      },
+      {
+        "name": "AWS Supply Chain",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Systems Manager",
+        "tagging_actions": [
+          "AddTags*",
+          "RemoveTags*"
+        ]
+      },
+      {
+        "name": "AWS Systems Manager for SAP",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Systems Manager Incident Manager",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Systems Manager Incident Manager Contacts",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Systems Manager Quick Setup",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Telco Network Builder",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Textract",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Timestream",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Timestream InfluxDB",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Transcribe",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Transfer Family",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Transform",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Transform custom",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Translate",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS User Notifications",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS User Notifications Contacts",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon Verified Permissions",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon VPC Lattice",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS WAF",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS WAF Regional",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS WAF V2",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Well-Architected Tool",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS Wickr",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon WorkLink",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon WorkMail",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon WorkSpaces",
+        "tagging_actions": [
+          "CreateTags",
+          "DeleteTags"
+        ]
+      },
+      {
+        "name": "AWS WorkSpaces Managed Instances",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "Amazon WorkSpaces Secure Browser",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource",
+          "CreateTags"
+        ]
+      },
+      {
+        "name": "Amazon WorkSpaces Thin Client",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      },
+      {
+        "name": "AWS X-Ray",
+        "tagging_actions": [
+          "TagResource",
+          "UntagResource"
+        ]
+      }
+    ]
+  }
+}

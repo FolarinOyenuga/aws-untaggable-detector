@@ -21,16 +21,13 @@ ENV/
 Thumbs.db
 
 # Project specific
-output/*.json
-output/*.csv
 *.log
 
 # Jupyter
 .ipynb_checkpoints/
 
-# Cache and history
+# Cache
 .cache/
-history/
 
 # pytest
 .pytest_cache/

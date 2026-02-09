@@ -1,0 +1,19 @@
+{
+  "added": [],
+  "removed": [],
+  "unchanged_count": 1809,
+  "summary_changes": {
+    "total_services": {
+      "old": 461,
+      "new": 461
+    },
+    "services_without_tagging_api": {
+      "old": 145,
+      "new": 145
+    },
+    "total_untaggable_resources": {
+      "old": 1809,
+      "new": 1809
+    }
+  }
+}
