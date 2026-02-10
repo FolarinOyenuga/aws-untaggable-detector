@@ -23,5 +23,4 @@ rich>=13.7.0
 pytest>=8.0.0
 
 # Development
-pytest-cache>=7.4.0
 black>=23.12.0
