@@ -31,20 +31,15 @@ jobs:
       - name: Run detection
         run: python detect_api_taggable.py
       
-      - name: Check for changes
-        id: changes
-        run: |
-          if [ -n "$(git status --porcelain output/ history/)" ]; then
-            echo "has_changes=true" >> $GITHUB_OUTPUT
-          else
-            echo "has_changes=false" >> $GITHUB_OUTPUT
-          fi
-      
-      - name: Commit reports
-        if: steps.changes.outputs.has_changes == 'true'
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add output/ history/
-          git commit -m "chore: update untaggable resources report [$(date -u +%Y-%m-%d)]"
-          git push
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore: update untaggable resources report"
+          title: "chore: update untaggable resources report"
+          body: |
+            Automated update of untaggable resources detection.
+            
+            Run date: ${{ github.run_id }}
+          branch: auto-update-reports
+          delete-branch: true
