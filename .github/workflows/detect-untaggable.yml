@@ -33,6 +33,7 @@ jobs:
         run: python detect_api_taggable.py
       
       - name: Create Pull Request
+        id: cpr
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -44,3 +45,9 @@ jobs:
             Run date: ${{ github.run_id }}
           branch: auto-update-reports
           delete-branch: true
+      
+      - name: Enable auto-merge
+        if: steps.cpr.outputs.pull-request-number
+        run: gh pr merge --auto --squash "${{ steps.cpr.outputs.pull-request-number }}"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
