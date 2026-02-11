@@ -6,12 +6,12 @@ This is the authoritative source for untaggable resource detection.
 Use this script for comprehensive analysis.
 
 Source of Truth: IAM Service Authorization Reference
-- Parses which resources the TagResource/CreateTags actions apply to
-- This is the definitive API-level answer regardless of creation method
+Methodology:
+- A resource is TAGGABLE if it has aws:ResourceTag/${TagKey} condition key
+  in the Resource types table, OR is in scope of TagResource/CreateTags action
+- A resource is UNTAGGABLE only if it has NEITHER of these indicators
 
-For each service with tagging support, extracts:
-- Which specific resource types can be tagged
-- Which resource types CANNOT be tagged (exist in service but not in TagResource scope)
+This is the definitive API-level answer regardless of creation method.
 
 Related scripts:
 - detect_service_level.py [SECONDARY] - Quick service-level check
@@ -78,9 +78,13 @@ def extract_service_prefix(soup: BeautifulSoup) -> str:
     return ""
 
 
-def extract_resource_types(soup: BeautifulSoup) -> list[str]:
-    """Extract all resource types from the Resource types table."""
-    resource_types = []
+def extract_resource_types_with_tagging_info(soup: BeautifulSoup) -> dict:
+    """Extract all resource types and identify which have aws:ResourceTag condition keys.
+    
+    The presence of aws:ResourceTag/${TagKey} condition key is the authoritative
+    indicator that a resource supports tagging, regardless of TagResource action scope.
+    """
+    resources = {}
     
     resource_section = None
     for heading in soup.find_all(["h2", "h3"]):
@@ -89,15 +93,20 @@ def extract_resource_types(soup: BeautifulSoup) -> list[str]:
             break
     
     if not resource_section:
-        return resource_types
+        return {"all_resources": [], "resources_with_tag_condition": []}
     
     table = resource_section.find_next("table")
     if not table:
-        return resource_types
+        return {"all_resources": [], "resources_with_tag_condition": []}
     
     headers = [th.get_text(strip=True).lower() for th in table.find_all("th")]
     if not any("arn" in h for h in headers):
-        return resource_types
+        return {"all_resources": [], "resources_with_tag_condition": []}
+    
+    condition_col = next((i for i, h in enumerate(headers) if "condition" in h), -1)
+    
+    all_resources = []
+    resources_with_tag_condition = []
     
     for row in table.find_all("tr")[1:]:
         cells = row.find_all("td")
@@ -105,9 +114,17 @@ def extract_resource_types(soup: BeautifulSoup) -> list[str]:
             resource_name = cells[0].get_text(strip=True).lower()
             resource_name = resource_name.replace("*", "").replace("required", "").strip()
             if resource_name and resource_name not in ["", "-"]:
-                resource_types.append(resource_name)
+                all_resources.append(resource_name)
+                
+                if condition_col >= 0 and len(cells) > condition_col:
+                    condition_text = cells[condition_col].get_text(strip=True).lower()
+                    if "aws:resourcetag" in condition_text:
+                        resources_with_tag_condition.append(resource_name)
     
-    return resource_types
+    return {
+        "all_resources": all_resources,
+        "resources_with_tag_condition": resources_with_tag_condition,
+    }
 
 
 def extract_tagging_actions_and_resources(soup: BeautifulSoup) -> dict:
@@ -182,27 +199,39 @@ def fetch_with_retry(url: str, max_retries: int = MAX_RETRIES) -> str:
 
 
 def analyze_service(service: dict) -> dict:
-    """Analyze a single service for resource-level tagging support."""
+    """Analyze a single service for resource-level tagging support.
+    
+    A resource is considered TAGGABLE if:
+    1. It has aws:ResourceTag/${TagKey} condition key in the Resource types table, OR
+    2. It's listed in the scope of a TagResource/CreateTags/AddTags action
+    
+    A resource is UNTAGGABLE only if it has NEITHER of these indicators.
+    """
     try:
         html = fetch_with_retry(service["url"])
         soup = BeautifulSoup(html, "lxml")
         
-        all_resources = extract_resource_types(soup)
+        resource_info = extract_resource_types_with_tagging_info(soup)
         tagging_info = extract_tagging_actions_and_resources(soup)
         
-        taggable = set(tagging_info["taggable_resources"])
-        all_res = set(all_resources)
-        untaggable = list(all_res - taggable) if taggable else []
-        has_tagging = len(tagging_info["tagging_actions"]) > 0
+        all_resources = set(resource_info["all_resources"])
+        resources_with_tag_condition = set(resource_info["resources_with_tag_condition"])
+        resources_in_tag_action_scope = set(tagging_info["taggable_resources"])
+        
+        taggable = resources_with_tag_condition | resources_in_tag_action_scope
+        untaggable = list(all_resources - taggable)
+        
+        has_tagging = len(tagging_info["tagging_actions"]) > 0 or len(resources_with_tag_condition) > 0
         
         return {
             "name": service["name"],
             "url": service["url"],
             "has_tagging_api": has_tagging,
-            "all_resources": all_resources,
-            "taggable_resources": tagging_info["taggable_resources"],
+            "all_resources": list(all_resources),
+            "taggable_resources": list(taggable),
             "untaggable_resources": untaggable,
             "tagging_actions": tagging_info["tagging_actions"],
+            "resources_with_tag_condition": list(resources_with_tag_condition),
         }
     except Exception as e:
         return {
