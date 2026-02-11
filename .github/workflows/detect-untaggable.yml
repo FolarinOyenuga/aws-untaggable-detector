@@ -2,9 +2,8 @@ name: Detect Untaggable Resources
 
 on:
   schedule:
-    # Daily at midnight UTC (for 4-day test period)
-    # After testing, change to: '0 0 1 */3 *' (quarterly)
-    - cron: '0 0 * * *'
+    # Quarterly: 1st of Jan, Apr, Jul, Oct at midnight UTC
+    - cron: '0 0 1 */3 *'
   workflow_dispatch:  # Allow manual trigger
 
 permissions:
