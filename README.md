@@ -8,16 +8,23 @@ This creates real problems:
 - **SCP policies fail** when they enforce tags on untaggable resources
 - **Cost allocation gaps** - untagged resources can't be attributed to teams/projects
 - **Compliance blind spots** - you can't enforce what you can't tag
-- **Manual maintenance hell** - keeping track of 1800+ untaggable resources across 460+ services
+- **Manual maintenance hell** - keeping track of 500+ untaggable resources across 460+ services
 
 ## The Solution
 
 This tool automatically detects all AWS resources that cannot be tagged by parsing the authoritative source: the **IAM Service Authorization Reference**.
 
+### Methodology
+
+A resource is considered **taggable** if:
+- It has `aws:ResourceTag/${TagKey}` condition key in the Resource types table, OR
+- It's in scope of TagResource/CreateTags/AddTags action
+
+A resource is **untaggable** only if it has NEITHER indicator.
+
 **Key findings from the latest scan:**
-- 🔴 **156 AWS services** have no tagging support at all
-- 🔴 **1800+ specific resources** cannot be tagged
-- ⚠️ Many "taggable" services have mixed support (some resources taggable, others not)
+- 🔴 **534 specific resources** cannot be tagged
+- ⚠️ Many services have mixed support (some resources taggable, others not)
 
 ## Quick Start
 
