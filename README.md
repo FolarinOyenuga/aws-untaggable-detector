@@ -8,7 +8,7 @@ This creates real problems:
 - **SCP policies fail** when they enforce tags on untaggable resources
 - **Cost allocation gaps** - untagged resources can't be attributed to teams/projects
 - **Compliance blind spots** - you can't enforce what you can't tag
-- **Manual maintenance hell** - keeping track of 500+ untaggable resources across 460+ services
+- **Manual maintenance hell** - keeping track of 534 untaggable resources across 461 services
 
 ## The Solution
 
@@ -70,7 +70,35 @@ For SCP tagging policies, you need to **exclude untaggable resources** from tag 
 
 Without these exclusions, your SCP policies will block legitimate resource creation.
 
+## Who Is This For?
+
+- **Platform/Cloud Engineers** building SCP tagging policies
+- **FinOps Teams** identifying cost allocation gaps from untaggable resources
+- **Compliance Teams** understanding tagging enforcement limitations
+- **Anyone** implementing AWS tagging strategies at scale
+
+## Why aws:ResourceTag?
+
+This tool checks for `aws:ResourceTag/${TagKey}` condition key presence, not just `CreateTags` or `TagResource` action support. Here's why:
+
+- SCPs use `aws:ResourceTag` conditions to enforce tagging
+- A resource could theoretically support `CreateTags` but lack `aws:ResourceTag` condition support
+- Such resources would fail SCP evaluation even if tagged
+- By checking for `aws:ResourceTag`, we identify what's compatible with SCP enforcement, not just what's taggable in general
+
+## Out of Scope
+
+This tool detects **untaggable resources**, not:
+
+- **Usage metrics** (API requests, events processed): These are billing aggregations, not resources
+- **Ephemeral items** (Lambda invocations, API calls): Transient actions without persistent state
+- **Third party or Marketplace products**: Not in IAM Service Authorization Reference
+
+## Known Limitations
+
+- **Web scraping dependency**: Parses AWS HTML documentation. Structure changes could break detection. Integration tests help catch this early.
+- **Point in time accuracy**: AWS adds and changes services regularly. Run quarterly or on demand for updates.
+
 ## Related
 
-- [Spike ticket #595](https://github.com/ministryofjustice/cloud-optimisation-and-accountability/issues/595)
 - Source: [IAM Service Authorization Reference](https://docs.aws.amazon.com/service-authorization/latest/reference/reference.html)
