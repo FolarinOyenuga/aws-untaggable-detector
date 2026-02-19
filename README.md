@@ -51,7 +51,7 @@ Output is saved to `output/` (latest) and `history/` (versioned).
 
 ## Output Files
 
-- `output/api_taggable_resources.json`: Comprehensive untaggable resource list
+- `output/api_taggable_resources.json`: Full untaggable resource list
 - `output/service_level_untaggable.json`: Services without tagging API
 - `history/`: Timestamped versions for change tracking
 

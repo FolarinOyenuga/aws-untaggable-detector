@@ -3,7 +3,7 @@
 [PRIMARY/AUTHORITATIVE] Detect which AWS resources support tagging at the API level.
 
 This is the authoritative source for untaggable resource detection.
-Use this script for comprehensive analysis.
+Use this script for full analysis.
 
 Source of Truth: IAM Service Authorization Reference
 Methodology:
