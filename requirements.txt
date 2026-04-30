@@ -16,7 +16,7 @@ pandas>=2.0.0
 jsonschema>=4.20.0
 
 # Output formatting
-tabulate>=0.9.0
+tabulate>=0.10.0
 rich>=13.7.0
 
 # Testing
