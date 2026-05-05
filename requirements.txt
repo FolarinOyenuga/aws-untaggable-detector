@@ -13,7 +13,7 @@ lxml>=6.1.0
 pandas>=2.0.0
 
 # JSON schema validation
-jsonschema>=4.20.0
+jsonschema>=4.26.0
 
 # Output formatting
 tabulate>=0.10.0
