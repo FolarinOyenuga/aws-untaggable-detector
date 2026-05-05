@@ -17,7 +17,7 @@ jsonschema>=4.20.0
 
 # Output formatting
 tabulate>=0.10.0
-rich>=13.7.0
+rich>=15.0.0
 
 # Testing
 pytest>=8.0.0
