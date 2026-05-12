@@ -2,7 +2,7 @@
 boto3>=1.43.4
 
 # HTTP requests for scraping/API calls
-requests>=2.33.1
+requests>=2.34.0
 requests-cache>=1.0.0
 
 # HTML parsing for IAM auth reference scraping
