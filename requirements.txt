@@ -1,5 +1,5 @@
 # AWS SDK
-boto3>=1.43.4
+boto3>=1.43.11
 
 # HTTP requests for scraping/API calls
 requests>=2.33.1
