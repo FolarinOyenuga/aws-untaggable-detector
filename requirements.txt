@@ -20,7 +20,7 @@ tabulate>=0.10.0
 rich>=15.0.0
 
 # Testing
-pytest>=9.0.3
+pytest>=9.1.1
 
 # Development
 black>=26.3.1
